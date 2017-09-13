@@ -23,4 +23,15 @@ final class AppTest extends TestCase
         );
     }
 
+    public function test_custom_validation() {
+        $this->assertEquals(
+            generate_fizz_buzz($input = 1, $min_range = 2, $max_range = 2000),
+            "Invalid Input: Input must be an integer between 2 and 2000"
+        );
+        $this->assertEquals(
+            generate_fizz_buzz($input = 2000, $min_range = 1, $max_range = 1999),
+            "Invalid Input: Input must be an integer between 1 and 1999"
+        );
+    }
+
 }
