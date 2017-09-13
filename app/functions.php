@@ -1,6 +1,6 @@
 <?php
 
-function generate_fizz_buzz(int $input, int $min_range = 1, int $max_range = 2000) {
+function generate_fizz_buzz(int $input, int $min_range = 1, int $max_range = 2000, array $generation_rules = array (3 => "Fizz", 5 => "Buzz",)) {
 
     $validation = array(
         'options' => array(
@@ -22,12 +22,10 @@ function generate_fizz_buzz(int $input, int $min_range = 1, int $max_range = 200
 
         $step = "";
 
-        if ($i % 3 == 0) {
-            $step .= "Fizz";
-        }
-
-        if ($i % 5 == 0) {
-            $step .= "Buzz";
+        foreach ($generation_rules as $key => $value) {
+            if ($i % $key == 0) {
+                $step .= $value;
+            }
         }
 
         if ($step == "") {
