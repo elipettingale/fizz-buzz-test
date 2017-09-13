@@ -1,11 +1,11 @@
 <?php
 
-function generate_fizz_buzz(int $input) {
+function generate_fizz_buzz(int $input, int $min_range = 1, int $max_range = 2000) {
 
     $validation = array(
         'options' => array(
-            'min_range' => 1,
-            'max_range' => 2000,
+            'min_range' => $min_range,
+            'max_range' => $max_range,
         )
     );
 
