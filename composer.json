@@ -1,0 +1,12 @@
+{
+  "name": "elipettingale/fizz-buzz-test",
+  "authors": [
+    {
+      "name": "Elliot Pettingale",
+      "email": "elipettingale@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "6.3.0"
+  }
+}
