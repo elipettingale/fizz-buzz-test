@@ -11,7 +11,6 @@ Can be used in the following ways:
 ## Funtion
 
 ```
-
 generate_fizz_buzz(
     
     // The number you wish to print up to
