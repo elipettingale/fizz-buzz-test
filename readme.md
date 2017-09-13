@@ -17,10 +17,10 @@ generate_fizz_buzz(
     $input = 2000, 
     
     // The minimum number allowed
-    $min_range = min range,
+    $min_range = 1,
     
     // The maximum number allowed
-    $max_range = max range,
+    $max_range = 2000,
     
     // Used to add or remove custom generation rules
     $generation_rules = array ( 
