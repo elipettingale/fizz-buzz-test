@@ -34,4 +34,15 @@ final class AppTest extends TestCase
         );
     }
 
+    public function test_custom_sequence() {
+        $this->assertEquals(
+            generate_fizz_buzz($input = 15, $min_range = 1, $max_range = 2000, $generation_rules = array(
+                3 => "Fizz",
+                5 => "Buzz",
+                10 => "Bang"
+            )),
+            "1, 2, Fizz, 4, Buzz, Fizz, 7, 8, Fizz, BuzzBang, 11, Fizz, 13, 14, FizzBuzz, "
+        );
+    }
+
 }
