@@ -8,7 +8,7 @@ Can be used in the following ways:
 1) Run "php app\index.php" to start the function demo
 2) Run "phpunit" to test the function
 
-## Funtion
+## Function
 
 ```
 generate_fizz_buzz(
